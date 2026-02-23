@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-02-23",
+  "formulas": {
+    "tutorial": {
+      "name": "教程型",
+      "pattern": "[时间] + [动作] + [技术] + [结果]",
+      "effectiveness": 4.5,
+      "templates": [
+        "{time}搞懂 {tech} {aspect}",
+        "手把手教你 {action} {tech}",
+        "{time}从零到一：{tech} {scenario}",
+        "新手指南：如何 {action} {tech}",
+        "{tech} 入门教程：{aspect}"
+      ],
+      "variables": {
+        "time": ["5分钟", "10分钟", "30分钟", "1小时", "一天"],
+        "action": ["搭建", "部署", "配置", "使用", "优化"],
+        "aspect": ["核心概念", "最佳实践", "常见问题", "进阶技巧"]
+      },
+      "scoring_rules": {
+        "has_time": 10,
+        "has_action": 10,
+        "has_tech": 10,
+        "length_15_30": 10
+      }
+    },
+    "principle": {
+      "name": "原理型",
+      "pattern": "深入理解 [技术] 的 [核心概念]",
+      "effectiveness": 3.8,
+      "templates": [
+        "深入理解 {tech} 的 {aspect}",
+        "{tech} 工作原理详解",
+        "{tech} 底层机制探秘",
+        "从源码看 {tech} 的 {aspect}",
+        "{tech} 设计思想解析"
+      ],
+      "variables": {
+        "aspect": ["工作原理", "核心机制", "设计思想", "底层实现", "架构设计"]
+      },
+      "scoring_rules": {
+        "has_depth_word": 15,
+        "has_tech": 10,
+        "has_aspect": 10,
+        "length_15_30": 10
+      }
+    },
+    "practical": {
+      "name": "实战型",
+      "pattern": "[动作] + [技术] + [场景]",
+      "effectiveness": 4.2,
+      "templates": [
+        "用 {tech} 实现 {scenario}",
+        "{tech} 实战：{scenario}",
+        "如何用 {tech} 解决 {problem}",
+        "{tech} 在 {scenario} 中的应用",
+        "实战案例：{tech} + {scenario}"
+      ],
+      "variables": {
+        "scenario": ["微服务架构", "高并发系统", "实时数据处理", "自动化部署", "性能优化"],
+        "problem": ["性能瓶颈", "扩展性问题", "安全隐患", "维护难题"]
+      },
+      "scoring_rules": {
+        "has_action": 10,
+        "has_tech": 10,
+        "has_scenario": 10,
+        "length_15_30": 10
+      }
+    }
+  },
+  "scoring_weights": {
+    "length": 0.2,
+    "has_number": 0.1,
+    "has_action_word": 0.15,
+    "has_time_promise": 0.15,
+    "has_benefit": 0.2,
+    "formula_match": 0.2
+  },
+  "action_words": [
+    "搞懂", "教你", "实现", "搭建", "部署", "配置", "优化", 
+    "解决", "掌握", "学会", "深入", "探秘", "详解"
+  ],
+  "time_words": [
+    "分钟", "小时", "天", "快速", "极速", "秒懂"
+  ],
+  "benefit_words": [
+    "效率", "性能", "提升", "优化", "加速", "简化", "轻松"
+  ]
+}

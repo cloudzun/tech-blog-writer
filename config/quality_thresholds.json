@@ -1,0 +1,121 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-02-23",
+  "dimensions": {
+    "accuracy": {
+      "name": "技术准确性",
+      "weight": 30,
+      "max_score": 30,
+      "checks": [
+        {
+          "name": "has_code_blocks",
+          "description": "是否有代码示例",
+          "points": 10
+        },
+        {
+          "name": "code_lang_specified",
+          "description": "代码块是否指定语言",
+          "points": 5
+        },
+        {
+          "name": "has_version_info",
+          "description": "是否有版本号说明",
+          "points": 5
+        },
+        {
+          "name": "has_output_example",
+          "description": "是否有输出示例",
+          "points": 10
+        }
+      ]
+    },
+    "readability": {
+      "name": "可读性",
+      "weight": 25,
+      "max_score": 25,
+      "checks": [
+        {
+          "name": "paragraph_length",
+          "description": "段落长度适中（100-500字符）",
+          "points": 10
+        },
+        {
+          "name": "heading_structure",
+          "description": "使用标题分层（至少3个二级标题）",
+          "points": 10
+        },
+        {
+          "name": "has_lists",
+          "description": "使用列表（至少5个列表项）",
+          "points": 5
+        }
+      ]
+    },
+    "practicality": {
+      "name": "实用性",
+      "weight": 25,
+      "max_score": 25,
+      "checks": [
+        {
+          "name": "has_prerequisites",
+          "description": "说明前置知识",
+          "points": 5
+        },
+        {
+          "name": "has_steps",
+          "description": "提供操作步骤",
+          "points": 10
+        },
+        {
+          "name": "has_troubleshooting",
+          "description": "包含故障排查",
+          "points": 5
+        },
+        {
+          "name": "has_summary",
+          "description": "有总结部分",
+          "points": 5
+        }
+      ]
+    },
+    "structure": {
+      "name": "结构完整性",
+      "weight": 20,
+      "max_score": 20,
+      "checks": [
+        {
+          "name": "has_title",
+          "description": "有明确标题",
+          "points": 5
+        },
+        {
+          "name": "has_summary",
+          "description": "有摘要",
+          "points": 5
+        },
+        {
+          "name": "has_body",
+          "description": "正文充实（>500字）",
+          "points": 5
+        },
+        {
+          "name": "has_conclusion",
+          "description": "有结论",
+          "points": 5
+        }
+      ]
+    }
+  },
+  "thresholds": {
+    "excellent": 85,
+    "good": 70,
+    "acceptable": 60,
+    "poor": 0
+  },
+  "grade_labels": {
+    "excellent": "优秀",
+    "good": "良好",
+    "acceptable": "及格",
+    "poor": "需改进"
+  }
+}
