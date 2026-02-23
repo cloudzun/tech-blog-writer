@@ -1,0 +1,148 @@
+{
+  "version": "1.0.0",
+  "examples": [
+    {
+      "id": 1,
+      "title": "5分钟搞懂 Docker 容器化部署",
+      "topic": "Docker",
+      "type": "tutorial",
+      "target_audience": "beginner",
+      "quality_score": 88,
+      "highlights": [
+        "清晰的类比（集装箱）",
+        "完整的代码示例",
+        "详细的步骤说明",
+        "常见问题解答"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "深入理解 React Hooks 的工作原理",
+      "topic": "React Hooks",
+      "type": "principle",
+      "target_audience": "intermediate",
+      "quality_score": 85,
+      "highlights": [
+        "原理深入解析",
+        "源码级别讲解",
+        "性能优化建议",
+        "最佳实践总结"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "用 GitHub Actions 实现 CI/CD 自动化部署",
+      "topic": "GitHub Actions",
+      "type": "practical",
+      "target_audience": "intermediate",
+      "quality_score": 90,
+      "highlights": [
+        "完整的实战项目",
+        "可运行的配置文件",
+        "详细的部署步骤",
+        "错误处理方案"
+      ]
+    }
+  ],
+  "bad_examples": [
+    {
+      "id": 1,
+      "title": "Docker教程",
+      "problems": [
+        "标题过于简单",
+        "没有吸引力",
+        "不知道能学到什么"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "这个工具太厉害了！",
+      "problems": [
+        "标题党",
+        "没有具体信息",
+        "不专业"
+      ]
+    }
+  ],
+  "quality_benchmarks": {
+    "excellent": {
+      "score_range": "85-100",
+      "characteristics": [
+        "技术准确无误",
+        "代码示例完整可运行",
+        "结构清晰，逻辑连贯",
+        "通俗易懂，有实战价值",
+        "有配图或表格辅助理解"
+      ]
+    },
+    "good": {
+      "score_range": "70-84",
+      "characteristics": [
+        "技术基本准确",
+        "有代码示例",
+        "结构完整",
+        "部分概念不够通俗",
+        "缺少实战演练"
+      ]
+    },
+    "acceptable": {
+      "score_range": "60-69",
+      "characteristics": [
+        "技术有小错误",
+        "代码示例不完整",
+        "结构基本完整",
+        "可读性一般"
+      ]
+    },
+    "poor": {
+      "score_range": "0-59",
+      "characteristics": [
+        "技术细节错误",
+        "代码示例无法运行",
+        "结构混乱",
+        "过于抽象，缺少例子"
+      ]
+    }
+  },
+  "common_mistakes": [
+    {
+      "mistake": "过度使用 AI 腔",
+      "examples": [
+        "让我们深入探讨",
+        "值得注意的是",
+        "综上所述"
+      ],
+      "fix": [
+        "我们来看看",
+        "注意",
+        "总结一下"
+      ]
+    },
+    {
+      "mistake": "代码示例不完整",
+      "examples": [
+        "省略导入语句",
+        "缺少错误处理",
+        "没有运行结果"
+      ],
+      "fix": [
+        "包含所有导入",
+        "添加 try-except",
+        "展示输出示例"
+      ]
+    },
+    {
+      "mistake": "缺少实战价值",
+      "examples": [
+        "只讲理论",
+        "没有可操作步骤",
+        "缺少实际场景"
+      ],
+      "fix": [
+        "理论 + 实践结合",
+        "提供详细步骤",
+        "使用真实案例"
+      ]
+    }
+  ]
+}

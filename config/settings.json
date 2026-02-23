@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-02-22",
+  "preferences": {
+    "target_audience": "intermediate",
+    "article_length": "medium",
+    "code_language": "python",
+    "output_language": "chinese"
+  },
+  "quality_thresholds": {
+    "excellent": 85,
+    "good": 70,
+    "acceptable": 60
+  },
+  "title_formulas": {
+    "tutorial": {
+      "weight": 0.4,
+      "examples": [
+        "5分钟搞懂 {tech} {aspect}",
+        "手把手教你 {action} {tech}"
+      ]
+    },
+    "principle": {
+      "weight": 0.3,
+      "examples": [
+        "深入理解 {tech} 的 {aspect}",
+        "{tech} 工作原理详解"
+      ]
+    },
+    "practical": {
+      "weight": 0.3,
+      "examples": [
+        "用 {tech} 实现 {scenario}",
+        "{tech} 实战：{scenario}"
+      ]
+    }
+  },
+  "code_style": {
+    "max_line_length": 80,
+    "require_comments": true,
+    "require_docstrings": true,
+    "require_type_hints": false
+  }
+}
